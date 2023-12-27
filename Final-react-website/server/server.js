@@ -57,7 +57,7 @@ app.get("/api/cafe", async (request, response) => {
 //post로 전달받을 쿼리 작성해주기
 app.post("/api/cafes", async (request, response) => {
   const { name, price } = request.body;
-  console.log("데이터 들어왔는지 확인! : ", { name, data });
+  console.log("데이터 들어왔는지 확인! : ", { name, price });
 
   let connection;
   try {
