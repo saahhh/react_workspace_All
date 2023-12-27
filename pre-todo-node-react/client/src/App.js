@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 //npm i react-router-dom
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Todos from "./Todos";
 
 const Home = () => <div>홈페이지</div>;
 
@@ -25,9 +26,8 @@ function App() {
           </li>
         </ul>
         <Routes>
-          <Route path='/' element={<Home/>} />
-          <Route path='/menu' element={Menu />} />
-          <Route path='/todos' element={ />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/todos" element={<Todos />} />
         </Routes>
       </div>
     </Router>
@@ -37,8 +37,6 @@ function App() {
 export default App;
 
 //index 값으로 가지고 올 때 0부터 시작
-
-
 
 /*
 import React, { useState, useEffect } from "react";

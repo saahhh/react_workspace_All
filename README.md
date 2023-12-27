@@ -17,10 +17,10 @@
     (컴포넌트(함수)로 사용하는 부트스트랩)
     npm i mui 에 설치된 명령어
 
-         (기능)JavaScript : npm i react-router-dom (링크를 오고갈 수 있도록 허용)
-         npm i axios (fetch의 최신버전을 설치해주며 get과 post를 원활하게 이용가능하게 해줌)
-         get : 서버에 원하는 정보를 요청할 때 많이 사용 (read와 select)
-         post : form에 사용자가 작성한 데이터내용을 백엔드로 전송하는데 사용
+            (기능)JavaScript : npm i react-router-dom (링크를 오고갈 수 있도록 허용)
+            npm i axios (fetch의 최신버전을 설치해주며 get과 post를 원활하게 이용가능하게 해줌)
+            get : 서버에 원하는 정보를 요청할 때 많이 사용 (read와 select)
+            post : form에 사용자가 작성한 데이터내용을 백엔드로 전송하는데 사용
 
 - git에 올릴 때 유의사항
   git에 올릴 때는 node_modules 폴더와 package-lock.json파일은 삭제하거나 .gitignore를 사용해서 github에 올라가지 못하도록 해야함 (용량이 크기 때문)
@@ -41,12 +41,3 @@
 
                         프론트엔드는 코드를 수정하면 가상의 돔이 계속 수정된 내용을 반영해서 자동으로 새로고침이 되지만 백엔드는 한 번 껐다가 다시 실행해줘야함
                         여기에서 포트번호는 수정되면 둘 다 모두 껐다가 다시 실행해줘야함
-
-1.  테마를 변경하기 위해서는 context를 사용해서 전체적인 테마 변경
-    파일 링크 탈 수 있도록 세팅해줌
-    각 파일에 bootstrap을 활용해서 꾸며줄 수 있음
-    링크 / = home
-    링크 /blog = Blog
-    링크 /todos = TodoList
-    링크 /game = Game
-    링크 /comment = Comment
