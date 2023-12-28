@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import AppMain from "./AppMain";
+import Todo from "./TodoList/Todo";
 //indexJS가 최상위 js이기 때문에 경로문제로 인해 제일 위에도 bootstrap을 넣어줌
 import "bootstrap/dist/css/bootstrap.min.css";
 
