@@ -32,6 +32,9 @@ export default function Header() {
             <NavDropdown.Item as={Link} to="/quiz">
               Quiz
             </NavDropdown.Item>
+            <NavDropdown.Item as={Link} to="/fastClick">
+              FastClick
+            </NavDropdown.Item>
           </NavDropdown>
         </Navbar.Collapse>
       </Container>

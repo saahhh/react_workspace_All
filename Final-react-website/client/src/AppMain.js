@@ -6,6 +6,8 @@ import Header from "./Component/Header";
 import Footer from "./Component/Footer";
 import Home from "./Component/Home";
 import NumberGuessingGame from "./Game/NumberGuessingGame";
+import Quiz from "./Game/Quiz";
+import FastClick from "./Game/FastClick";
 
 function App() {
   return (
@@ -17,7 +19,12 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/movie" element={<Movie />} />
             <Route path="/todos" element={<TodoList />} />
-            <Route path="numberGuessingGame" element={<NumberGuessingGame />} />
+            <Route
+              path="/numberGuessingGame"
+              element={<NumberGuessingGame />}
+            />
+            <Route path="/quiz" element={<Quiz />} />
+            <Route path="/fastClick" element={<FastClick />} />
           </Routes>
         </div>
         <Footer />

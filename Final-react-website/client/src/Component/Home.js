@@ -13,6 +13,18 @@ const Home = () => {
             <Link to="/movie">
               <Button variant="primary">Go To Movies</Button>
             </Link>
+            <Link to="/todos">
+              <Button variant="primary">Todo List</Button>
+            </Link>
+            <Link to="/numberGuessingGame">
+              <Button variant="primary">number Guessing Game</Button>
+            </Link>
+            <Link to="/quiz">
+              <Button variant="primary"> Quiz</Button>
+            </Link>
+            <Link to="/fastClick">
+              <Button variant="primary"> FastClick</Button>
+            </Link>
           </Card.Body>
         </Col>
       </Row>

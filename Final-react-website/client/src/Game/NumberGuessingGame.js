@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { ProgressBar } from "react-bootstrap";
 
 const NumberGuessingGame = () => {
   const randomNumber = () => {
@@ -15,6 +16,8 @@ const NumberGuessingGame = () => {
   const [attempts, setAttempts] = useState(0);
   //내가 입력한 숫자 기록
   const [guessHistory, setGuessHistory] = useState([]);
+
+  const progress = (attempts / useGuess) * 100;
 
   useEffect(() => {
     const delay = (ms) => {
@@ -102,6 +105,7 @@ const NumberGuessingGame = () => {
                 max="100"
                 required
               />
+              <ProgressBar now={progress} label={`${progress.toFixed(2)}`} />
               <button className="btn btn-outline-primary mb-2" type="submit">
                 제출하기
               </button>
